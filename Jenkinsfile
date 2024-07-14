@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'testpipelinebuild'
+        PROJECT_ID = 'cicd-javaapp'
         CLUSTER_NAME = 'javacluster'
         LOCATION = 'us-central1-c'
         NAMESPACE = 'testpipeline'
@@ -15,7 +15,7 @@ pipeline {
                 clusterName: env.CLUSTER_NAME,
                 location: env.LOCATION,
                 manifestPattern: 'manifest.yaml',
-                credentialsId: "jenkinstokengke",
+                credentialsId: "CICD-JavaApp",
                 verifyDeployments: true])
             }
         }
