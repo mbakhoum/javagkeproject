@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     environment {
         PROJECT_ID = 'cicd-javaapp'
         CLUSTER_NAME = 'javacluster'
@@ -9,7 +8,6 @@ pipeline {
         CONTAINER_NAME = 'dockertest'
         IMAGE_TAG = "latest"
     }
-
     stages {
         stage('Deploy to GKE') {
             steps {
