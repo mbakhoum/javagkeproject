@@ -1,3 +1,4 @@
+below test pipeline , works successfully
 pipeline {
     agent any
     stages{
@@ -9,3 +10,6 @@ pipeline {
         }
     }
 }
+
+=============================
+
