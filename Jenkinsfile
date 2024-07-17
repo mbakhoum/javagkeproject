@@ -7,7 +7,7 @@ pipeline {
         spec:
           containers:
           - name: maven
-            image: maven:3.14
+            image: maven:latest
             command:
             - cat
             tty: true
